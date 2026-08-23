@@ -1,0 +1,68 @@
+{
+  "stage_1_classification": {
+    "model": "RandomForestClassifier",
+    "accuracy": 0.871268656716418,
+    "roc_auc": 0.8814270065091724,
+    "confusion_matrix": [
+      [
+        2121,
+        1182
+      ],
+      [
+        819,
+        11422
+      ]
+    ],
+    "classification_report": {
+      "ZERO_RELEASE": {
+        "precision": 0.7214285714285714,
+        "recall": 0.6421435059037239,
+        "f1-score": 0.6794810187409899,
+        "support": 3303.0
+      },
+      "POSITIVE_RELEASE": {
+        "precision": 0.9062202475404634,
+        "recall": 0.933093701494976,
+        "f1-score": 0.9194606560676193,
+        "support": 12241.0
+      },
+      "accuracy": 0.871268656716418,
+      "macro avg": {
+        "precision": 0.8138244094845174,
+        "recall": 0.78761860369935,
+        "f1-score": 0.7994708374043046,
+        "support": 15544.0
+      },
+      "weighted avg": {
+        "precision": 0.8669532051963063,
+        "recall": 0.871268656716418,
+        "f1-score": 0.8684665270088276,
+        "support": 15544.0
+      }
+    }
+  },
+  "stage_2_regression": {
+    "model": "HistGradientBoostingRegressor",
+    "params": {
+      "max_iter": 500,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 0.0,
+      "random_state": 42
+    },
+    "positive_train_samples": 49306,
+    "positive_test_samples": 12241,
+    "raw_mae": 33352.91956101655,
+    "raw_rmse": 727953.8168944503,
+    "raw_r2": 0.004133667885835135,
+    "log_mae": 1.9379458328702024,
+    "log_rmse": 2.5074354627257955,
+    "log_r2": 0.48749753381730865
+  },
+  "final_expected_forecast": {
+    "mae": 26590.23087939973,
+    "rmse": 646658.3166966919,
+    "r2": 0.0025892091818275897
+  },
+  "notes": "Raw-pound R2 is near zero because the target is extremely right-skewed (median ~95 lb, 99th pct ~450k lb, max ~400M lb). Log-space R2 (~0.48) is the fairer metric and shows the model captures meaningful signal across orders of magnitude. This is single-year TRI data, so the model predicts expected waste release given facility/material characteristics, not a true multi-year temporal forecast."
+}

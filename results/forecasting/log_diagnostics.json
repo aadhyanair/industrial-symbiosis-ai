@@ -1,0 +1,82 @@
+{
+  "actual_percentiles": {
+    "0": 0.0,
+    "25": 0.1,
+    "50": 102.25,
+    "75": 2750.6366,
+    "90": 20952.950000000004,
+    "95": 53689.399999999965,
+    "99": 391497.6,
+    "99.5": 758879.147749999,
+    "99.9": 3395093.367000169,
+    "100": 75596269.0
+  },
+  "prediction_percentiles": {
+    "0": 0.0,
+    "25": 27.429919426985272,
+    "50": 170.33297152793594,
+    "75": 794.2958334179226,
+    "90": 3830.6442983687225,
+    "95": 8680.42096785086,
+    "99": 31388.864532266703,
+    "99.5": 57067.96355900367,
+    "99.9": 156146.8222966377,
+    "100": 306602.8674249352
+  },
+  "mean_absolute_error": 26590.23087939973,
+  "median_absolute_error": 259.357823807478,
+  "zero_release_count": 3303,
+  "zero_release_mean_prediction": 413.7653727991885,
+  "positive_release_count": 12241,
+  "positive_release_mean_actual": 35210.15486774985,
+  "positive_release_mean_prediction": 2513.1775477719934,
+  "log_error_percentiles": {
+    "50": 1.99409102801242,
+    "75": 3.461214381621345,
+    "90": 4.882607198092052,
+    "95": 5.79644478085222,
+    "99": 7.674708655580792
+  },
+  "error_by_quantity_range": [
+    {
+      "range": "ZERO",
+      "count": 3303,
+      "mean_actual": 0.0,
+      "mean_prediction": 413.7653727992,
+      "mean_absolute_error": 413.7653727992,
+      "mean_log_error": 3.7606259335
+    },
+    {
+      "range": "1-100 lb",
+      "count": 4452,
+      "mean_actual": 17.6042252449,
+      "mean_prediction": 315.6572603248,
+      "mean_absolute_error": 305.3505583285,
+      "mean_log_error": 1.9491503677
+    },
+    {
+      "range": "100-10k lb",
+      "count": 5448,
+      "mean_actual": 2186.8393167984,
+      "mean_prediction": 1421.0278600583,
+      "mean_absolute_error": 2106.9162720651,
+      "mean_log_error": 1.585284163
+    },
+    {
+      "range": "10k-1M lb",
+      "count": 2277,
+      "mean_actual": 76316.6640010619,
+      "mean_prediction": 8467.0538917099,
+      "mean_absolute_error": 68603.0095636515,
+      "mean_log_error": 2.9037242073
+    },
+    {
+      "range": "1M+ lb",
+      "count": 64,
+      "mean_actual": 3831909.174953125,
+      "mean_prediction": 36519.6679107777,
+      "mean_absolute_error": 3795389.5070423475,
+      "mean_log_error": 5.5937059938
+    }
+  ]
+}
