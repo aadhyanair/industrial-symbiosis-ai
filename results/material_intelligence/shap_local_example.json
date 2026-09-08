@@ -1,0 +1,74 @@
+{
+  "true_material": "ORGANIC",
+  "predicted_material": "ORGANIC",
+  "true_purity": 0.5816663503646851,
+  "predicted_purity": 0.700372040271759,
+  "material_head_top_features": [
+    {
+      "feature": "moisture_pct",
+      "shap_value": 3.801103387711072
+    },
+    {
+      "feature": "density_kg_m3",
+      "shap_value": -0.9624464573828039
+    },
+    {
+      "feature": "ph",
+      "shap_value": 0.36654523915888476
+    },
+    {
+      "feature": "deriv_2053nm",
+      "shap_value": -0.3268301603674537
+    },
+    {
+      "feature": "snv_1959nm",
+      "shap_value": -0.2961309383645163
+    },
+    {
+      "feature": "deriv_1918nm",
+      "shap_value": -0.26044168179430144
+    },
+    {
+      "feature": "snv_1953nm",
+      "shap_value": 0.25861809203852143
+    },
+    {
+      "feature": "snv_1982nm",
+      "shap_value": -0.23710871790909915
+    }
+  ],
+  "purity_head_top_features": [
+    {
+      "feature": "deriv_2094nm",
+      "shap_value": -0.0439936491040545
+    },
+    {
+      "feature": "deriv_2106nm",
+      "shap_value": -0.037307126504907626
+    },
+    {
+      "feature": "deriv_1835nm",
+      "shap_value": -0.035634114183470574
+    },
+    {
+      "feature": "deriv_2100nm",
+      "shap_value": 0.03195275886535384
+    },
+    {
+      "feature": "deriv_2112nm",
+      "shap_value": 0.030051091472284738
+    },
+    {
+      "feature": "deriv_2088nm",
+      "shap_value": 0.029328730971109704
+    },
+    {
+      "feature": "deriv_1824nm",
+      "shap_value": -0.02761569957308515
+    },
+    {
+      "feature": "deriv_1829nm",
+      "shap_value": 0.027147836441069457
+    }
+  ]
+}

@@ -8,3 +8,7 @@ models/
 # Ignore Python cache
 __pycache__/
 *.pyc
+
+# Person B: large synthetic artifacts (regenerate with generate_dataset.py)
+data/synthetic/*.npz
+data/synthetic/*.npy

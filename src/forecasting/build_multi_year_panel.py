@@ -84,7 +84,7 @@ def load_tri_file(filepath, year):
 
 # Load and combine
 df_2021 = load_tri_file("data/raw/US_2A_2021.txt", 2021)
-df_2022 = load_tri_file("data/raw/US_2a_2022.txt", 2022)
+df_2022 = load_tri_file("data/raw/US_2A_2022.txt", 2022)
 
 panel_df = pd.concat([df_2021, df_2022], ignore_index=True)
 

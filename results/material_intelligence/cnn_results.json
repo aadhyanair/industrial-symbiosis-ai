@@ -1,0 +1,416 @@
+{
+  "cnn": {
+    "trainable_parameters": 21488,
+    "epochs_run": 44,
+    "material_accuracy": 0.9392592592592592,
+    "material_macro_f1": 0.9357851041837081,
+    "purity_mae": 0.05685386806726456,
+    "purity_rmse": 0.07498780017215,
+    "purity_r2": 0.6948539018630981,
+    "classification_report": {
+      "PET": {
+        "precision": 0.9166666666666666,
+        "recall": 0.9746835443037974,
+        "f1-score": 0.9447852760736196,
+        "support": 79.0
+      },
+      "HDPE": {
+        "precision": 0.9310344827586207,
+        "recall": 0.8181818181818182,
+        "f1-score": 0.8709677419354839,
+        "support": 66.0
+      },
+      "LDPE": {
+        "precision": 0.7848101265822784,
+        "recall": 0.8857142857142857,
+        "f1-score": 0.8322147651006712,
+        "support": 70.0
+      },
+      "PP": {
+        "precision": 0.9512195121951219,
+        "recall": 0.9512195121951219,
+        "f1-score": 0.9512195121951219,
+        "support": 82.0
+      },
+      "PS": {
+        "precision": 0.9763779527559056,
+        "recall": 0.96875,
+        "f1-score": 0.9725490196078431,
+        "support": 128.0
+      },
+      "PVC": {
+        "precision": 0.9603960396039604,
+        "recall": 0.9238095238095239,
+        "f1-score": 0.941747572815534,
+        "support": 105.0
+      },
+      "PAPER": {
+        "precision": 0.9692307692307692,
+        "recall": 0.9402985074626866,
+        "f1-score": 0.9545454545454546,
+        "support": 67.0
+      },
+      "CARDBOARD": {
+        "precision": 0.9142857142857143,
+        "recall": 0.927536231884058,
+        "f1-score": 0.920863309352518,
+        "support": 69.0
+      },
+      "WOOD": {
+        "precision": 0.9541284403669725,
+        "recall": 0.9811320754716981,
+        "f1-score": 0.9674418604651163,
+        "support": 106.0
+      },
+      "TEXTILE": {
+        "precision": 0.9642857142857143,
+        "recall": 0.9310344827586207,
+        "f1-score": 0.9473684210526315,
+        "support": 87.0
+      },
+      "GLASS": {
+        "precision": 0.9622641509433962,
+        "recall": 0.918918918918919,
+        "f1-score": 0.9400921658986175,
+        "support": 111.0
+      },
+      "FERROUS_METAL": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9882352941176471,
+        "f1-score": 0.96,
+        "support": 85.0
+      },
+      "ALUMINIUM": {
+        "precision": 0.897196261682243,
+        "recall": 0.9230769230769231,
+        "f1-score": 0.909952606635071,
+        "support": 104.0
+      },
+      "ORGANIC": {
+        "precision": 0.9634146341463414,
+        "recall": 0.9753086419753086,
+        "f1-score": 0.9693251533742331,
+        "support": 81.0
+      },
+      "SOLVENT_WASTE": {
+        "precision": 0.9716981132075472,
+        "recall": 0.9363636363636364,
+        "f1-score": 0.9537037037037037,
+        "support": 110.0
+      },
+      "accuracy": 0.9392592592592592,
+      "macro avg": {
+        "precision": 0.9366894608029722,
+        "recall": 0.936284226415603,
+        "f1-score": 0.9357851041837081,
+        "support": 1350.0
+      },
+      "weighted avg": {
+        "precision": 0.94077829945799,
+        "recall": 0.9392592592592592,
+        "f1-score": 0.9394213044194849,
+        "support": 1350.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        77,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        54,
+        9,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        62,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        78,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        124,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        97,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        63,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        104,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        81,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        102,
+        0,
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        84,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        96,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        79,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        103
+      ]
+    ]
+  },
+  "random_forest_baseline": {
+    "material_accuracy": 0.9377777777777778,
+    "material_macro_f1": 0.9336703262183518,
+    "purity_mae": 0.049153734108033004,
+    "purity_r2": 0.7179514415992282
+  },
+  "data": {
+    "train": 6300,
+    "val": 1350,
+    "test": 1350,
+    "materials": [
+      "PET",
+      "HDPE",
+      "LDPE",
+      "PP",
+      "PS",
+      "PVC",
+      "PAPER",
+      "CARDBOARD",
+      "WOOD",
+      "TEXTILE",
+      "GLASS",
+      "FERROUS_METAL",
+      "ALUMINIUM",
+      "ORGANIC",
+      "SOLVENT_WASTE"
+    ],
+    "sensor_channels": [
+      "moisture_pct",
+      "density_kg_m3",
+      "ph",
+      "conductivity_ms_cm",
+      "voc_ppm",
+      "chlorine_index",
+      "ir_reflectance",
+      "bulk_temp_c"
+    ],
+    "spectral_channels": [
+      "snv",
+      "sg1_derivative"
+    ]
+  },
+  "notes": "Synthetic NIR + chemical-sensor data from the digital-twin simulator. Multi-task 1-D CNN shares a convolutional spectral backbone between a material-classification head and a purity-regression head. Purity is a continuous contamination-blend label."
+}
