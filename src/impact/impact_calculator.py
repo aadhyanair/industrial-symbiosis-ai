@@ -35,10 +35,17 @@ def calculate_impact(
     """
     tons = quantity_lbs / LBS_PER_TON
 
-    # Ensure rates are bounded
-    recycling_rate = min(max(recycling_rate, 0.0), 1.0)
-    treatment_rate = min(max(treatment_rate, 0.0), 1.0)
-    energy_recovery_rate = min(max(energy_recovery_rate, 0.0), 1.0)
+    # Ensure rates are non-negative
+    recycling_rate = max(float(recycling_rate), 0.0)
+    treatment_rate = max(float(treatment_rate), 0.0)
+    energy_recovery_rate = max(float(energy_recovery_rate), 0.0)
+
+    # Normalise pathway shares if the sum exceeds 1.0 (100% of material)
+    total_pathways = recycling_rate + treatment_rate + energy_recovery_rate
+    if total_pathways > 1.0:
+        recycling_rate /= total_pathways
+        treatment_rate /= total_pathways
+        energy_recovery_rate /= total_pathways
 
     # 1. Environmental Impact
     co2e_avoided = tons * (
