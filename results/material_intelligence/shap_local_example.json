@@ -6,69 +6,69 @@
   "material_head_top_features": [
     {
       "feature": "moisture_pct",
-      "shap_value": 3.801103387711072
+      "shap_value": 3.81301997808061
     },
     {
       "feature": "density_kg_m3",
-      "shap_value": -0.9624464573828039
+      "shap_value": -1.0419998462607245
     },
     {
       "feature": "ph",
-      "shap_value": 0.36654523915888476
-    },
-    {
-      "feature": "deriv_2053nm",
-      "shap_value": -0.3268301603674537
-    },
-    {
-      "feature": "snv_1959nm",
-      "shap_value": -0.2961309383645163
-    },
-    {
-      "feature": "deriv_1918nm",
-      "shap_value": -0.26044168179430144
+      "shap_value": 0.41106184063656426
     },
     {
       "feature": "snv_1953nm",
-      "shap_value": 0.25861809203852143
+      "shap_value": 0.3123028978396681
     },
     {
-      "feature": "snv_1982nm",
-      "shap_value": -0.23710871790909915
+      "feature": "snv_1959nm",
+      "shap_value": -0.30029716536056655
+    },
+    {
+      "feature": "deriv_2053nm",
+      "shap_value": -0.27240750795731966
+    },
+    {
+      "feature": "deriv_1482nm",
+      "shap_value": 0.24991431008674905
+    },
+    {
+      "feature": "deriv_1918nm",
+      "shap_value": -0.22858678530612359
     }
   ],
   "purity_head_top_features": [
     {
       "feature": "deriv_2094nm",
-      "shap_value": -0.0439936491040545
+      "shap_value": -0.04633136717062837
     },
     {
       "feature": "deriv_2106nm",
-      "shap_value": -0.037307126504907626
+      "shap_value": -0.034576973622059984
     },
     {
       "feature": "deriv_1835nm",
-      "shap_value": -0.035634114183470574
+      "shap_value": -0.033602507347744594
     },
     {
       "feature": "deriv_2100nm",
-      "shap_value": 0.03195275886535384
+      "shap_value": 0.03023285814248156
     },
     {
-      "feature": "deriv_2112nm",
-      "shap_value": 0.030051091472284738
+      "feature": "deriv_1265nm",
+      "shap_value": -0.0300266584545383
+    },
+    {
+      "feature": "deriv_2076nm",
+      "shap_value": 0.028334769947393364
     },
     {
       "feature": "deriv_2088nm",
-      "shap_value": 0.029328730971109704
+      "shap_value": 0.027523010427171028
     },
     {
-      "feature": "deriv_1824nm",
-      "shap_value": -0.02761569957308515
-    },
-    {
-      "feature": "deriv_1829nm",
-      "shap_value": 0.027147836441069457
+      "feature": "deriv_1476nm",
+      "shap_value": -0.026486465931761977
     }
   ]
 }
